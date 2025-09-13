@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML & Data Science Quiz - IT2011</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>ML & Data Science Quiz - IT2011</h1>
+            <p>Machine Learning & Data Science - Set 6</p>
+            <div class="university-info">
+                <p>Sri Lanka Institute of Information Technology</p>
+                <p>Faculty of Computing</p>
+            </div>
+        </header>
+
+        <div class="quiz-container" id="quiz-container">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="quiz-info">
+                    <span>Question <span id="current-question">1</span> of <span id="total-questions">30</span></span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 class="question" id="question">Loading question...</h2>
+                <div class="options" id="options">
+                    <!-- Options will be dynamically loaded -->
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                <button class="btn btn-primary" id="next-btn">Next</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+
+        <div class="start-screen" id="start-screen">
+            <div class="start-content">
+                <h2>Welcome to ML & Data Science Quiz</h2>
+                <div class="quiz-details">
+                    <div class="detail-item">
+                        <strong>Total Questions:</strong> 30
+                    </div>
+                    <div class="detail-item">
+                        <strong>Question Types:</strong> Multiple Choice Questions (Some allow multiple selections)
+                    </div>
+                    <div class="detail-item">
+                        <strong>Topics Covered:</strong>
+                        <ul>
+                            <li>Machine Learning Applications & Problem Types</li>
+                            <li>Model Evaluation Metrics & Performance Analysis</li>
+                            <li>Feature Engineering & Data Preprocessing</li>
+                            <li>Deep Learning & Neural Networks</li>
+                            <li>Recommendation Systems & Collaborative Filtering</li>
+                            <li>Big Data Analytics & Time Series Forecasting</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-large" id="start-quiz-btn">Start Quiz</button>
+            </div>
+        </div>
+
+        <div class="result-screen" id="result-screen" style="display: none;">
+            <div class="result-content">
+                <h2>Quiz Completed!</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span class="score-text" id="score-text">0%</span>
+                    </div>
+                    <div class="score-details">
+                        <p>Correct Answers: <span id="correct-count">0</span>/30</p>
+                        <p>Time Taken: <span id="time-taken">00:00</span></p>
+                        <p class="grade" id="grade">Grade: F</p>
+                    </div>
+                </div>
+                <div class="result-actions">
+                    <button class="btn btn-primary" id="review-btn">Review Answers</button>
+                    <button class="btn btn-secondary" id="restart-btn">Restart Quiz</button>
+                    <a href="index.html" class="btn btn-secondary">Back to Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-screen" id="review-screen" style="display: none;">
+            <div class="review-header">
+                <h2>Review Your Answers</h2>
+                <button class="btn btn-secondary" id="close-review-btn">Back to Results</button>
+            </div>
+            <div class="review-content" id="review-content">
+                <!-- Review content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <script src="ml-data-science-script.js"></script>
+</body>
+</html>
