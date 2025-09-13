@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/**)",
+      "Bash(move generative-ai-quiz.html expert-systems-quiz.html)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

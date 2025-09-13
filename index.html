@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/ML Quiz Hub - IT2011</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>AI/ML Quiz Hub - IT2011</h1>
+            <p>Artificial Intelligence and Machine Learning</p>
+            <div class="university-info">
+                <p>Sri Lanka Institute of Information Technology</p>
+                <p>Faculty of Computing</p>
+            </div>
+        </header>
+
+        <div class="quiz-menu">
+            <h2>Select a Quiz Set</h2>
+            <div class="quiz-grid">
+                <div class="quiz-card">
+                    <div class="quiz-card-header">
+                        <h3>Set 1: Coming Soon</h3>
+                        <span class="quiz-badge">TBD</span>
+                    </div>
+                    <div class="quiz-card-content">
+                        <p>Lecture 1 content - Quiz under development</p>
+                        <ul class="quiz-topics">
+                            <li>Content to be added</li>
+                            <li>Based on Lecture 1 notes</li>
+                        </ul>
+                    </div>
+                    <div class="quiz-card-footer">
+                        <button class="btn btn-secondary" disabled>Coming Soon</button>
+                    </div>
+                </div>
+
+                <div class="quiz-card">
+                    <div class="quiz-card-header">
+                        <h3>Set 2: Generative AI</h3>
+                        <span class="quiz-badge">20 Questions</span>
+                    </div>
+                    <div class="quiz-card-content">
+                        <p>Introduction to Generative AI fundamentals</p>
+                        <ul class="quiz-topics">
+                            <li>Generative AI Overview</li>
+                            <li>AI vs ML vs Deep Learning</li>
+                            <li>Language Models & Transformers</li>
+                            <li>Prompt Engineering & Applications</li>
+                        </ul>
+                    </div>
+                    <div class="quiz-card-footer">
+                        <a href="generative-ai-quiz.html" class="btn btn-primary">Start Quiz</a>
+                    </div>
+                </div>
+
+                <div class="quiz-card">
+                    <div class="quiz-card-header">
+                        <h3>Set 3: Expert Systems</h3>
+                        <span class="quiz-badge">20 Questions</span>
+                    </div>
+                    <div class="quiz-card-content">
+                        <p>Expert Systems and Ontologies fundamentals</p>
+                        <ul class="quiz-topics">
+                            <li>Expert Systems Components</li>
+                            <li>Knowledge Base & Inference Engine</li>
+                            <li>Forward & Backward Chaining</li>
+                            <li>Ontologies & Knowledge Representation</li>
+                        </ul>
+                    </div>
+                    <div class="quiz-card-footer">
+                        <a href="expert-systems-quiz.html" class="btn btn-primary">Start Quiz</a>
+                    </div>
+                </div>
+
+                <div class="quiz-card">
+                    <div class="quiz-card-header">
+                        <h3>Set 4: ML Pipeline</h3>
+                        <span class="quiz-badge">20 Questions</span>
+                    </div>
+                    <div class="quiz-card-content">
+                        <p>Machine Learning Pipeline and processes</p>
+                        <ul class="quiz-topics">
+                            <li>Pipeline Overview & Stages</li>
+                            <li>Data Preprocessing Techniques</li>
+                            <li>Feature Engineering & Selection</li>
+                            <li>Model Training & Evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="quiz-card-footer">
+                        <a href="ml-pipeline-quiz.html" class="btn btn-primary">Start Quiz</a>
+                    </div>
+                </div>
+
+                <div class="quiz-card">
+                    <div class="quiz-card-header">
+                        <h3>Set 5: Logistic Regression</h3>
+                        <span class="quiz-badge">20 Questions</span>
+                    </div>
+                    <div class="quiz-card-content">
+                        <p>Binary classification with Logistic Regression</p>
+                        <ul class="quiz-topics">
+                            <li>Logistic Regression Fundamentals</li>
+                            <li>Sigmoid Function & S-curve</li>
+                            <li>Logit Function & Log-odds</li>
+                            <li>Maximum Likelihood Estimation</li>
+                        </ul>
+                    </div>
+                    <div class="quiz-card-footer">
+                        <a href="logistic-regression-quiz.html" class="btn btn-primary">Start Quiz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .quiz-menu {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .quiz-menu h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        .quiz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .quiz-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .quiz-card-header {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quiz-card-header h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .quiz-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .quiz-card-content {
+            padding: 1.5rem;
+        }
+
+        .quiz-card-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .quiz-topics {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .quiz-topics li {
+            padding: 0.4rem 0;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .quiz-topics li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        .quiz-card-footer {
+            padding: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .quiz-card-footer .btn {
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .quiz-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quiz-card-header {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>
